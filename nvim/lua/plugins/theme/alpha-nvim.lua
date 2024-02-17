@@ -1,0 +1,34 @@
+return {
+  --   "goolord/alpha-nvim",
+  --   event = "VimEnter",
+  --   dependencies = { "nvim-tree/nvim-web-devicons" },
+  --   config = function()
+  --     local alpha = require "alpha"
+  --     local dashboard = require "alpha.themes.dashboard"
+  --
+  --     -- Set header
+  --     dashboard.section.header.val = {
+  --       " ▄▄▄     ▄▄▄ ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ",
+  --       "█   █   █   █       █  █▄█  █       █",
+  --       "█   █   █   █   ▄▄▄▄█       █   ▄   █",
+  --       "█   █   █   █  █  ▄▄█       █  █▄█  █",
+  --       "█   █▄▄▄█   █  █ █  █       █       █",
+  --       "█       █   █  █▄▄█ █ ██▄██ █   ▄   █",
+  --       "█▄▄▄▄▄▄▄█▄▄▄█▄▄▄▄▄▄▄█▄█   █▄█▄▄█ █▄▄█",
+  --       "ヽ༼ຈʖ̯ຈ༽ﾉヽ༼ຈʖ̯ຈ༽ﾉヽ༼ຈʖ̯ຈ༽ﾉヽ༼ຈʖ̯ຈ༽ﾉヽ༼ຈʖ̯ຈ༽ﾉ",
+  --     }
+  --     -- Set menu
+  --     -- dashboard.section.buttons.val = {}
+  --     -- local function footer()
+  --     --   local version = vim.version()
+  --     --   local print_version = "v" .. version.major .. "." .. version.minor .. "." .. version.patch
+  --     --   local datetime = os.date "%Y/%m/%d %H:%M:%S"
+  --     --
+  --     --   return print_version .. " - " .. datetime
+  --     -- end
+  --     --
+  --     -- dashboard.section.footer.val = footer()
+  --     --
+  --     alpha.setup(dashboard.opts)
+  --   end,
+}
