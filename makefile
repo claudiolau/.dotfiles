@@ -7,17 +7,17 @@ help: # Show help for each of the Makefile recipes.
 
 .PHONY: install 
 install: # install deps to use nvim
-	./bin/set-up.sh
+	./bin/install.sh
 
 .PHONY: create 
-create: 
+create: # create directory for custom configurations
 	@fd -td -d 1 . --exclude bin | xargs -I {} mkdir -p ~/.config/{}
 .PHONY: remove
-remove:
+remove: # remove directory for custom configurations
 	@fd -td -d 1 . --exclude bin | xargs -I {} rm -rf ~/.config/{}
 .PHONY: up 
-up:
-	./bin/install.sh
+up: # add symlink for custom configurations
+	@./bin/stow.sh
 .PHONY: down
-down: 
-	./bin/remove.sh
+down: # remove sysmlink for custom configurations 
+	@./bin/unstow.sh
