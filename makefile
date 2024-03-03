@@ -18,6 +18,6 @@ remove: # remove directory for custom configurations
 .PHONY: up 
 up: # add symlink for custom configurations
 	@./bin/stow.sh
-.PHONY: down
+	@cd ~/ ; ln -s ~/.dotfiles/.zshrc
 down: # remove sysmlink for custom configurations 
 	@./bin/unstow.sh

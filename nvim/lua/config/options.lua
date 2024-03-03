@@ -15,13 +15,15 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- line wrapping
 opt.wrap = false -- disable line wrapping
 opt.formatoptions:remove { "o" }
--- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- spell check
 opt.spelllang = "en_us"
 opt.spell = true
 
+-- window alias
 opt.laststatus = 3
-
 opt.swapfile = false
+opt.title = true
+opt.titlelen = 0
+opt.titlestring = "GAIA 🌎"
