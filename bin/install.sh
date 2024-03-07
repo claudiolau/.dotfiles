@@ -24,7 +24,6 @@ brew install bat && git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUST
 # setup https://spaceship-prompt.sh/config/intro/f
 # custom config for shell 
 curl -sS https://starship.rs/install.sh | sh
-eval "$(starship init bash)"
  
 # tool manager version
 brew install asdf

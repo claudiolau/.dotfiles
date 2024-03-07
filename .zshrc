@@ -105,10 +105,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 ### Custom Config ### 
-source ~/.docker/init-zsh.sh
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-. /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash
-
 # Cross-Shell Prompt
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -124,3 +120,6 @@ alias dprune='docker stop $(docker ps -aq) && docker rmi $(docker images -q)'
 
 # Git
 alias gforce='git add --all && git commit --amend' 
+
+# package manager
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
