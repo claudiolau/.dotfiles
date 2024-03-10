@@ -13,6 +13,7 @@ return {
     keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy find buffer" })
     keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Use help" })
-    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader>bc", "<cmd>bd<cr>", { desc = "Close buffer" })
   end,
 }

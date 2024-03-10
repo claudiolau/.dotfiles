@@ -10,7 +10,7 @@ return {
     }
   end,
   keys = {
-    { [[<C-\>]] },
+    { [[<C-\>]], "<C-\\><C-n>", desc = "Exit terminal mode" }, -- Added mapping to exit terminal mode
     { "<leader>0", "<Cmd>2ToggleTerm<Cr>", desc = "Terminal #2" },
     {
       "<leader>td",
