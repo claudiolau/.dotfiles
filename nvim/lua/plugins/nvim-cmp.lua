@@ -1,45 +1,64 @@
 return {
-  "nvim-telescope/telescope.nvim",
-  branch = "0.1.x",
+  "hrsh7th/nvim-cmp",
+  event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
-    "nvim-lua/plenary.nvim",
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    "nvim-tree/nvim-web-devicons",
+    "hrsh7th/cmp-buffer", -- source for text in buffer
+    "hrsh7th/cmp-cmdline", -- source for command-line
+    "hrsh7th/cmp-path", -- source for file system paths
+    "L3MON4D3/LuaSnip", -- snippet engine
+    "saadparwaiz1/cmp_luasnip", -- for autocompletion
+    "rafamadriz/friendly-snippets", -- useful snippets
+    "onsails/lspkind.nvim", -- vs-code like pictograms
   },
   config = function()
-    local keymap = vim.keymap
-    local builtin = require "telescope.builtin"
+    local cmp = require "cmp"
 
-    -- Define a custom function to delete a file
-    local function delete_file(prompt_bufnr)
-      local selection = require("telescope.actions.state").get_selected_entry()
-      -- Check if selection is not nil and it has a path
-      if selection and selection.filename then
-        -- Delete the file using vim's command
-        vim.fn.delete(selection.filename, "rf")
-        -- Close the Telescope prompt
-        require("telescope.actions").close(prompt_bufnr)
-      end
-    end
+    local luasnip = require "luasnip"
 
-    -- Set keymaps
-    keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-    keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-    keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Fuzzy find buffer" })
-    keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Use help" })
-    keymap.set("n", "<leader>fr", function()
-      local opts = {}
-      -- Attach custom mappings for the picker
-      opts.attach_mappings = function(_, map)
-        -- Add a keymap to delete the file on pressing <C-d>
-        map("i", "<C-d>", delete_file)
-        map("n", "<C-d>", delete_file)
-        return true
-      end
-      -- Launch the oldfiles picker with custom options
-      builtin.oldfiles(opts)
-    end, { desc = "Fuzzy find recent files" })
+    local lspkind = require "lspkind"
 
-    keymap.set("n", "<leader>bc", "<cmd>bd<cr>", { desc = "Close buffer" })
+    -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
+    require("luasnip.loaders.from_vscode").lazy_load()
+
+    cmp.setup {
+      completion = {
+        completeopt = "menu,menuone,preview,noselect",
+      },
+      snippet = { -- configure how nvim-cmp interacts with snippet engine
+        expand = function(args)
+          luasnip.lsp_expand(args.body)
+        end,
+      },
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+      },
+      mapping = cmp.mapping.preset.insert {
+        ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
+        ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
+        ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-f>"] = cmp.mapping.scroll_docs(4),
+        ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+        ["<C-e>"] = cmp.mapping.abort(), -- close completion window
+        ["<CR>"] = cmp.mapping.confirm { select = false },
+        ["<Down>"] = { c = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert } },
+        ["<Up>"] = { c = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert } },
+      },
+      -- sources for autocompletion
+      sources = cmp.config.sources {
+        { name = "nvim_lsp" },
+        { name = "luasnip" }, -- snippets
+        { name = "buffer" }, -- text within current buffer
+        { name = "cmdline" }, -- command-line completion
+        { name = "path" }, -- file system paths
+      },
+      -- configure lspkind for vs-code like pictograms in completion menu
+      formatting = {
+        format = lspkind.cmp_format {
+          maxwidth = 50,
+          ellipsis_char = "...",
+        },
+      },
+    }
   end,
 }

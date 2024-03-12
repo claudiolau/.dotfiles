@@ -119,7 +119,7 @@ alias dkill='docker system prune -a && docker system prune --volumes'
 alias dprune='docker stop $(docker ps -aq) && docker rmi $(docker images -q)'
 
 # Git
-alias gforce='git add --all && git commit --amend' 
+alias gforce='git add --all && git commit --amend && git push -f' 
 
 # package manager
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
