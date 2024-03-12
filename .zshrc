@@ -122,4 +122,14 @@ alias dprune='docker stop $(docker ps -aq) && docker rmi $(docker images -q)'
 alias gforce='git add --all && git commit --amend && git push -f' 
 
 # package manager
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+[ -f "/usr/local/opt/asdf/libexec/asdf.sh" ] && . "/usr/local/opt/asdf/libexec/asdf.sh" || . "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+
+# work-related dependencies
+LCL_DIR="$HOME/.lcl"
+
+if [ -d "$LCL_DIR" ]; then
+    for file in "$LCL_DIR"/.*-env "$LCL_DIR"/.*-alias; do
+        [ -f "$file" ] && source "$file"
+    done
+fi
+

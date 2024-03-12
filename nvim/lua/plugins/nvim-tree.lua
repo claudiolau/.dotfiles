@@ -68,7 +68,7 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store", ".git", ".node_modules/*" },
+        custom = { ".DS_Store", ".git/", ".node_modules/*" },
       },
     }
     -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
