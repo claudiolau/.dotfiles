@@ -16,10 +16,10 @@ vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true })
 
 -- Pane resizing
-vim.api.nvim_set_keymap("n", "<C-Up>", "<C-W>+", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-Down>", "<C-W>-", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-Left>", "<C-W><", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-Right>", "<C-W>>", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<C-Up>", "<C-W>+", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<C-Down>", "<C-W>-", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<C-Left>", "<C-W><", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<C-Right>", "<C-W>>", { noremap = true })
 
 -- Tab navigation between buffers
 vim.api.nvim_set_keymap("n", "<leader><Tab>", ":bnext<CR>", { noremap = true, silent = true })

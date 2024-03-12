@@ -1,5 +1,4 @@
 local opt = vim.opt
-
 --- Display Settings ---
 opt.relativenumber = true
 opt.number = true
@@ -21,7 +20,7 @@ opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or 
 opt.spelllang = "en_us"
 opt.spell = true
 
--- window alias
+-- window settings
 opt.laststatus = 3
 opt.swapfile = false
 opt.title = true
