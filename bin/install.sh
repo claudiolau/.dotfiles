@@ -35,7 +35,7 @@ brew install httpie
 brew install --cask httpie
 brew install --cask docker
 brew install --cask raycast
-
+brew install --cask obsidian
 # activity monitor 
 brew install ncurses automake autoconf gcc
  
