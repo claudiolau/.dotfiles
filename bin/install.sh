@@ -53,4 +53,5 @@ brew install font-hack-nerd-font
 brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
 
-
+# terminal  
+brew install zellij

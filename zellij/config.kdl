@@ -1,0 +1,15 @@
+ui {
+    pane_frames {
+        hide_session_name true
+        rounded_corners true
+    }
+}
+
+theme "tokyo-night-dark"
+
+layout {
+    tab name="my awesome tab"
+    tab name="my amazing tab" {
+        pane
+    }
+}

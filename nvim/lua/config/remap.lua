@@ -15,6 +15,11 @@ vim.api.nvim_set_keymap("n", "<C-k>", "<C-w>k", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", { noremap = true })
 
+-- Key mappings for navigating between terminal panes in terminal mode
+vim.api.nvim_set_keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", { noremap = true })
+vim.api.nvim_set_keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", { noremap = true })
+vim.api.nvim_set_keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", { noremap = true })
+
 -- Pane resizing
 -- vim.api.nvim_set_keymap("n", "<C-Up>", "<C-W>+", { noremap = true })
 -- vim.api.nvim_set_keymap("n", "<C-Down>", "<C-W>-", { noremap = true })

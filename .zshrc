@@ -121,6 +121,9 @@ alias dprune='docker stop $(docker ps -aq) && docker rmi $(docker images -q)'
 # Git
 alias gforce='git add --all && git commit --amend && git push -f' 
 
+# terminal 
+alias z='zellij'
+
 # package manager
 [ -f "/usr/local/opt/asdf/libexec/asdf.sh" ] && . "/usr/local/opt/asdf/libexec/asdf.sh" || . "/opt/homebrew/opt/asdf/libexec/asdf.sh"
 
@@ -135,3 +138,20 @@ if [ -d "$LCL_DIR" ]; then
     done
 fi
 
+
+zellij_tab_name_update() {
+    if [[ -n $ZELLIJ ]]; then
+        local current_dir=$PWD
+        if [[ $current_dir == $HOME ]]; then
+            current_dir="~"
+        else
+            current_dir=${current_dir##*/}
+        fi
+        command nohup zellij action rename-tab $current_dir >/dev/null 2>&1
+    fi
+}
+
+zellij_tab_name_update
+chpwd_functions+=(zellij_tab_name_update)
+
+alias lg='lazygit'
