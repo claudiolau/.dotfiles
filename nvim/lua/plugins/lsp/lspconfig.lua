@@ -2,7 +2,10 @@ return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
+    -- completions
     "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/nvim-cmp",
+    "L3MON4D3/LuaSnip",
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
@@ -81,6 +84,13 @@ return {
     lspconfig["cssls"].setup {
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        css = {
+          lint = {
+            unknownAtRules = "ignore",
+          },
+        },
+      },
     }
 
     -- configure tailwindcss server
@@ -127,9 +137,23 @@ return {
     }
 
     -- configure python server
-    lspconfig["pyright"].setup {
-      capabilities = capabilities,
+    lspconfig.mypy.setup {
       on_attach = on_attach,
+      capabilities = capabilities,
+
+      settings = {
+        python = {
+          analysis = {
+            autoSearchPaths = true,
+            diagnosticMode = "openFilesOnly",
+            useLibraryCodeForTypes = true,
+            typeCheckingMode = "off",
+            pythonPath = vim.fn.exepath "python3",
+            extraPaths = { ".venv" }, -- Add your virtual environment directory here
+          },
+          autoImportCompletions = true, -- Enable auto-import completions
+        },
+      },
     }
 
     -- configure lua server (with special settings)

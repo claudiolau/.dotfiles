@@ -68,7 +68,7 @@ return {
         },
       },
       filters = {
-        dotfiles = true,
+        -- dotfiles = true,
         -- custom = { ".DS_Store", ".git/", ".node_modules/*" },
       },
     }

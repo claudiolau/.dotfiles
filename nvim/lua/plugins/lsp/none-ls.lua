@@ -42,6 +42,16 @@ return {
         formatting.stylua, -- lua formatter
         formatting.isort,
         formatting.black,
+        formatting.biome.with {
+          args = {
+            "check",
+            "--apply-unsafe",
+            "--formatter-enabled=true",
+            "--organize-imports-enabled=true",
+            "--skip-errors",
+            "$FILENAME",
+          },
+        },
         diagnostics.pylint,
         diagnostics.eslint_d.with { -- js/ts linter
           condition = function(utils)

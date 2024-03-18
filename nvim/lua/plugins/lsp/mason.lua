@@ -30,6 +30,9 @@ return {
         "graphql",
         "emmet_ls",
         "prismals",
+        -- python
+        "mypy",
+        "ruff",
         "pyright",
       },
       automatic_installation = true,

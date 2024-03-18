@@ -154,4 +154,6 @@ zellij_tab_name_update() {
 zellij_tab_name_update
 chpwd_functions+=(zellij_tab_name_update)
 
-alias lg='lazygit'
+alias lg="lazygit"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -2,8 +2,10 @@
 
 vim.g.mapleader = " "
 
-vim.api.nvim_set_keymap("v", "<leader>y", '"+y', { noremap = true })
+vim.api.nvim_set_keymap("v", "<leader>y", '"+y', { noremap = true }) 
 vim.api.nvim_set_keymap("n", "<leader><esc>", ":qa!<CR>", { noremap = true })
+vim.api.nvim_set_keymap("v", "<leader><esc>", ":<C-u>qa!<CR>", { noremap = true })
+vim.api.nvim_set_keymap("t", "<leader><esc>", "<C-\\><C-n>:qa!<CR>", { noremap = true })
 
 -- Split panes
 vim.api.nvim_set_keymap("n", "<leader>vs", ":vsp<CR>", { noremap = true })

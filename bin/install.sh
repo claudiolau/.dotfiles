@@ -14,6 +14,8 @@ brew install stow
 brew install --cask iterm2
 brew install zsh
 brew install git 
+brew install lazygit
+brew install commitizen
 
 # zsch config 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -55,3 +57,7 @@ brew install koekeishiya/formulae/skhd
 
 # terminal  
 brew install zellij
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+
