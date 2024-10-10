@@ -1,0 +1,77 @@
+brew --version
+ls
+ls -a 
+rm -rf .zshenv
+ls
+ls
+exit
+brew --version
+ls
+cd .dotfiles
+ls
+ls
+vim test.sh
+vim test.sh
+vim install.sh
+cd
+ls
+rm -rf zsh .zprofile
+ls
+ls
+ls -a 
+cd .dotfiles
+ls
+./test.sh
+ls
+./test.sh
+./install.sh
+ls
+exit
+ls
+brew --version
+ls
+ls -a 
+ls
+clear
+ls
+ls
+cd .dotfiles
+ls
+vim install.sh
+ls
+cd bin
+ls
+ls
+clear
+ls
+ls -a 
+cd .. 
+l;s
+ls
+vim install.sh
+stow -t $HOME/.config zsh
+ls
+stow -t $HOME/.config/zsh zsh
+ls
+stow -t $HOME/.config/ .config/zsh
+stow -t $HOME/.config/ ./.config/zsh
+stow -t $HOME/.config config\
+
+ls
+ls -l ~/.config/zsh/.zshrc\
+
+ls
+ls -a 
+ls -a 
+ls
+ls
+cd .config
+ls
+cd zsh
+ls
+vim .zsh
+ls
+vim .zshrc 
+vim .zshrc 
+vim .zshrc 
+x

@@ -1,0 +1,7 @@
+brew --version
+ls
+ls -a 
+rm -rf .zshenv
+ls
+ls
+exit
