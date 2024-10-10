@@ -1,4 +1,4 @@
 export PATH="/opt/homebrew/bin:$PATH"
-trap 'source ~/.zshrc' EXIT
-
+export STARSHIP_CONFIG=~/starship/starship.toml
+eval "$(starship init zsh)"
 

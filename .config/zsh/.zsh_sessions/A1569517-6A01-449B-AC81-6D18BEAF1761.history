@@ -264,18 +264,3 @@ cd zsh
 ls
 vim .zshrc
 exit
-ls
-ll
-clear
-lsll
-brew --version
-ls
-clear
-ls
-ls
-rm -rf starship zsh
-ls
-rm -rf .zshenv
-ls
-ls -a 
-exit
