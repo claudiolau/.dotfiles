@@ -1,9 +1,8 @@
-.PHONY: install
-
 install:
 	./install.sh
 link:
-	stow -t $(HOME) .config 
+	mkdir -p ~/.config 
+	eval "$(/opt/homebrew/bin/brew shellenv)" && stow -t $HOME/.config .config
 unlink:
 	stow -D -t $(HOME) .config
 dump: 

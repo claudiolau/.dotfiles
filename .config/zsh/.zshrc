@@ -18,6 +18,7 @@ alias cd="z"
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS="--preview 'bat --style=numbers --color=always {} || cat {}' --preview-window=right:60%:wrap"
 
 # Set up development environment 
 eval "$(mise activate zsh)"
