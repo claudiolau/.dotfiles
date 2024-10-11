@@ -19,10 +19,9 @@ eval $(thefuck --alias)
 # Zoxide is a smarter cd command that remembers your directory usage and allows
 # quick navigation to frequently accessed directories.
 eval "$(zoxide init zsh)"
-
-# Create an alias for the 'cd' command
-# This allows you to use 'z' as a shorthand to change directories.
 alias z="cd"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # mise
 eval "$(mise activate zsh)"
@@ -38,4 +37,3 @@ alias cls="clear"
 alias ls="eza --icons=always"
 alias ll="ls -l"
 alias la="ls -a"
-

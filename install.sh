@@ -21,3 +21,4 @@ for script in ./bin/*.sh; do
     fi
 done
 
+
