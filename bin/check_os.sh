@@ -6,7 +6,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     
     # Hide the Dock
     defaults write com.apple.dock autohide -bool true
-    # Apply the changes
+    # Remove all apps from the Dock
+    defaults write com.apple.dock persistent-apps -array
+    # Restart the Dock to apply changes
     killall Dock
 
     # You can add any additional macOS-specific commands here
