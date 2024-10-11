@@ -233,10 +233,22 @@
       }
     },
     "cask": {
+      "dbngin": {
+        "version": "7.3,73",
+        "options": {
+          "full_name": "dbngin"
+        }
+      },
       "docker": {
         "version": "4.34.3,170107",
         "options": {
           "full_name": "docker"
+        }
+      },
+      "font-hack-nerd-font": {
+        "version": "3.2.1",
+        "options": {
+          "full_name": "font-hack-nerd-font"
         }
       },
       "google-chrome": {
@@ -249,6 +261,18 @@
         "version": "2024.1.2",
         "options": {
           "full_name": "httpie"
+        }
+      },
+      "raycast": {
+        "version": "1.84.2",
+        "options": {
+          "full_name": "raycast"
+        }
+      },
+      "tableplus": {
+        "version": "6.1.8,574",
+        "options": {
+          "full_name": "tableplus"
         }
       },
       "wezterm": {
