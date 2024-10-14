@@ -1,4 +1,2 @@
 indent_type = "Spaces"
 indent_width = 2
-call_args = "SameLine"
-empty_lines = "Remove"
