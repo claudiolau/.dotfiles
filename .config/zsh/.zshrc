@@ -11,7 +11,7 @@ eval "$(starship init zsh)"
 # Initialize The Fuck alias to use The Fuck easily in the terminal.
 eval $(thefuck --alias)
 
-# ---- Zoxide (better cd) ----
+# Smarter cd command 
 eval "$(zoxide init zsh)"
 alias cd="z"
 
@@ -25,8 +25,6 @@ eval "$(mise activate zsh)"
 # zsh-extensions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-bindkey '^C' clear-screen
 
 # ==============================================================================
 # Custom Aliasing
