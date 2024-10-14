@@ -8,16 +8,21 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
+    vim.g.termguicolors = true
+    -- Make the main background of nvim-tree transparent
+
     nvimtree.setup({
       view = {
         width = 35,
         relativenumber = true,
+        signcolumn = 'no', -- Hides the separator column
       },
       -- change folder arrow icons
       renderer = {
         indent_markers = {
           enable = true,
         },
+        group_empty = true,
         icons = {
           glyphs = {
             folder = {
