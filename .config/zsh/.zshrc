@@ -2,7 +2,7 @@
 # ==============================================================================
 # Homebrew-installed binaries without specifying their full path.
 export PATH="/opt/homebrew/bin:$PATH"
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH -- not ARM based
 
 # Set the location of the Starship configuration file
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -37,9 +37,3 @@ alias ll="ls -l"
 alias la="ls -a"
 alias cls="clear"
 alias q="exit"
-
-# Docker
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
-alias dkill="docker system prune -a && docker system prune --volumes"
-alias dprune="docker stop $(docker ps -aq) && docker rmi $(docker images -q)"
