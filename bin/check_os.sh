@@ -8,6 +8,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
     defaults write com.apple.dock autohide -bool true
     # Remove all apps from the Dock
     defaults write com.apple.dock persistent-apps -array
+    # Hide the macOS menu bar
+    defaults write NSGlobalDomain _HIHideMenuBar -bool true
     # Restart the Dock to apply changes
     killall Dock
 
