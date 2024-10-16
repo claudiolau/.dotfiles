@@ -38,4 +38,4 @@ alias ll="ls -l"
 alias la="ls -a"
 alias cls="clear"
 alias q="exit"
-alias zell='zellij'
+alias zell="zellij"
