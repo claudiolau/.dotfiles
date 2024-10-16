@@ -3,6 +3,7 @@
 # Homebrew-installed binaries without specifying their full path.
 export PATH="/opt/homebrew/bin:$PATH"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH -- not ARM based
+export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
 
 # Set the location of the Starship configuration file
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -37,3 +38,4 @@ alias ll="ls -l"
 alias la="ls -a"
 alias cls="clear"
 alias q="exit"
+alias zell='zellij'
