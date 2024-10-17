@@ -42,3 +42,8 @@ alias cls="clear"
 alias q="exit"
 alias zell="zellij"
 
+# ==============================================================================
+# Secret Related Dependencies
+# ==============================================================================
+[ -f "$HOME/.secrets/.env" ] && source "$HOME/.secrets/.env" 
+

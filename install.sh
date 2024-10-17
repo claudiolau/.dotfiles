@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ###############################################################################
-# Package Manager							                                  #
+# Package Manager							                                                #
 ###############################################################################
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -9,7 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle install
 
 ###############################################################################
-# Bin									                                      #
+# Bin									                                                        # 
 ###############################################################################
 
 for script in ./bin/*.sh; do

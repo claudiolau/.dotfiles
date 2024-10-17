@@ -41,3 +41,20 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+opt.termguicolors = true
+
+-- line wrapping
+opt.wrap = false -- disable line wrapping
+opt.formatoptions:remove { 'o' }
+opt.backspace = 'indent,eol,start' -- allow backspace on indent, end of line or insert mode start position
+
+-- spell check
+opt.spelllang = 'en_us'
+opt.spell = true
+
+-- window settings
+opt.laststatus = 3
+opt.swapfile = false
+opt.title = true
+opt.titlelen = 0
+opt.titlestring = 'GAIA 🌎'
