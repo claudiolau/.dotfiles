@@ -9,9 +9,6 @@ export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
-# Initialize The Fuck alias to use The Fuck easily in the terminal.
-eval $(thefuck --alias)
-
 # Smarter cd command 
 eval "$(zoxide init zsh)"
 alias cd="z"

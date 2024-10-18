@@ -22,7 +22,6 @@ opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
 
--- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
 opt.background = 'dark' -- colorschemes that can be light or dark will be made dark
@@ -47,10 +46,6 @@ opt.termguicolors = true
 opt.wrap = false -- disable line wrapping
 opt.formatoptions:remove { 'o' }
 opt.backspace = 'indent,eol,start' -- allow backspace on indent, end of line or insert mode start position
-
--- spell check
-opt.spelllang = 'en_us'
-opt.spell = true
 
 -- window settings
 opt.laststatus = 3
