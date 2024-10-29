@@ -1,5 +1,3 @@
-vim.g.mapleader = ' '
-
 --- ShortCut Settings ---
 
 vim.g.mapleader = ' '
