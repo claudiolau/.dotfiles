@@ -7,7 +7,7 @@
 mkdir -p ~/.config
 eval "$(/opt/homebrew/bin/brew shellenv)"
 stow -t $HOME/.config .config
-stow -D -t $HOME etc
+stow -t $HOME etc
 
 ###############################################################################
 # Secrets                                                                     # 
