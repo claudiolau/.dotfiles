@@ -4,6 +4,7 @@
 export PATH="/opt/homebrew/bin:$PATH"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH -- not ARM based
 export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
+export HOMEBREW_AUTO_UPDATE_SECS=43200
 
 # Set the location of the Starship configuration file
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
@@ -24,6 +25,7 @@ eval "$(mise activate zsh)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
 # ==============================================================================
 # Custom Aliasing
 # ==============================================================================
@@ -43,4 +45,3 @@ alias zell="zellij"
 # Secret Related Dependencies
 # ==============================================================================
 [ -f "$HOME/.secrets/.env" ] && source "$HOME/.secrets/.env" 
-
