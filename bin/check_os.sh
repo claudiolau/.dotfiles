@@ -18,6 +18,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{enabled = 0;}"
     defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "{enabled = 0;}"
 
+    # disable spotlight
+    defaults write com.apple.spotlight orderedItems -array
+
     # Enable Reduce Motion
     defaults write com.apple.Accessibility reduceMotion -bool true 
    # Refresh SystemUIServer to apply the changes
