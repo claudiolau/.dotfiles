@@ -1,0 +1,131 @@
+ls
+.dot
+cd dot
+v
+lg
+lazygit
+v
+ls
+cd .config
+ls
+v lazygit
+brew install commitizen\
+
+cd .. 
+ls
+brew dump -f
+brew bundle dump -f 
+v Brewfile
+ls
+lazygit
+git cz
+v
+cd .config
+v lazygit
+v
+v lazygit
+v
+v lazygit
+lazygit
+ls
+ll
+ls -a 
+ll
+ls 
+ls 
+ls -a 
+cd .config
+ls
+ls
+ls
+cd Developer
+ls
+ls
+rm -rf github github.pub install.sh
+ls
+ls
+cd
+ls
+ll
+clear
+ls
+clear
+ls
+ls
+cd ..
+ls
+printenv
+z .dot
+ls
+cd
+ls
+z .dot
+cd .config
+v
+q
+ls
+cd
+ls
+ll
+rm -rf github.pub
+ls
+v
+ls
+cd
+ls
+clear
+ll
+ls
+clear
+ls
+cd .config
+ls
+ls -a 
+ll 
+printenv
+bat nvim
+ls
+cd nvim
+ls
+nvim init.lua
+ls -ld /Users/clau1
+ls -ld /Users/clau1/.config/nvi
+ls -ld /Users/clau1/.config/nvim
+ls
+brew install wezterm
+brew install --cask wezterm
+ls
+zed 
+zed . 
+cd .. 
+ks
+ls
+cd .zsh
+ls
+cd zsh
+v
+ls
+code . 
+zed . 
+ls
+clear
+ls
+ls
+cd
+ls
+ls 
+ls -a 
+ll 
+ll
+ll
+ll
+ll
+ls
+ls -a 
+bat .wezterm.lua
+\:q
+ls
+clear
+ls
+cd Developer
+ls

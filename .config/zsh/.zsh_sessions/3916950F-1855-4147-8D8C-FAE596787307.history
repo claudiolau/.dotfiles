@@ -1,0 +1,39 @@
+ls
+.dot
+cd dot
+v
+lg
+lazygit
+v
+ls
+cd .config
+ls
+v lazygit
+brew install commitizen\
+
+cd .. 
+ls
+brew dump -f
+brew bundle dump -f 
+v Brewfile
+ls
+lazygit
+git cz
+v
+cd .config
+v lazygit
+v
+v lazygit
+v
+v lazygit
+lazygit
+ls
+ll
+ls -a 
+ll
+ls 
+ls 
+ls -a 
+cd .config
+ls
+ls

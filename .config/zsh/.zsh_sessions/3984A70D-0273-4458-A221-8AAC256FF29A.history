@@ -1,0 +1,558 @@
+ls
+.dot
+cd dot
+v
+lg
+lazygit
+v
+ls
+cd .config
+ls
+v lazygit
+brew install commitizen\
+
+cd .. 
+ls
+brew dump -f
+brew bundle dump -f 
+v Brewfile
+ls
+lazygit
+git cz
+v
+cd .config
+v lazygit
+v
+v lazygit
+v
+v lazygit
+lazygit
+ls
+ll
+ls -a 
+ll
+ls 
+ls 
+ls -a 
+cd .config
+ls
+ls
+ls
+cd Developer
+ls
+ls
+rm -rf github github.pub install.sh
+ls
+ls
+cd
+ls
+ll
+clear
+ls
+clear
+ls
+ls
+cd ..
+ls
+printenv
+z .dot
+ls
+cd
+ls
+z .dot
+cd .config
+v
+q
+ls
+mkdir .secret
+ls
+cd .secret
+ls
+zed 
+ls
+ls
+clear
+l
+sll
+clear
+ll
+ls -a 
+touch .lcl 
+vim .lcl 
+ls 
+cd .. 
+ls 
+source .zshenv
+ls
+cd .
+ls
+cd .. 
+cd 
+chmod + x .config
+ls
+ls -a 
+cd .config
+ls
+chmod + x *
+cd ..
+ls
+cd github
+ls
+rm -rf github
+ls
+ks
+exit
+ls
+clear
+ll
+ls 
+ll 
+ll 
+source .zshen
+source .zshenv
+exit
+ls
+sudo spctl --master-disable\
+
+ls
+sudo spctl --master-enable\
+
+ls
+cd Developer
+ls
+cd .. ls
+cd
+ls
+cd .secret
+ls
+ls
+brew install mise 
+chmod u+w /Users/clau1/.local/state/mise/tracked-configs/\
+
+python -v 
+tsc -v 
+ls
+node -v 
+sudo ln -sf /Users/clau1/.config/mise/config.toml /Users/clau1/.local/state/mise/tracked-configs/7809cb11dd8a3203\
+
+ls
+cat 
+clear
+ls
+ll
+ls
+ls -a 
+v .lcl
+cat .lcl
+cd .. 
+ls
+ls
+cd 
+ls
+ls 
+ls -a 
+RUST_BACKTRACE=1
+ls
+cd Developer
+ls
+ls
+nvim
+chmod u+rwx /Users/clau1/.local/share/nvim/lazy\
+
+cd
+ls
+chmod u+rwx /Users/clau1/.local/share/nvim/lazy\
+
+cd .local
+ls
+cd share
+ls
+brew install nvim
+cd
+ls
+ls
+ll
+ls -a 
+v .zshenv
+clear
+ll
+lls
+ls
+ls 
+ls 
+ls 
+ls
+ls
+cd .secret
+ls
+ls -a 
+v .lcl
+mkdir -p /Users/clau1/.local/share/nvim/lazy\
+
+nvim
+ls
+cd
+ls
+ls -a 
+clear
+l
+ls
+cd 
+ls
+cd .secret
+ls
+cat .lcl
+ls
+cd
+ls
+cd Developer
+ls
+git clone https://gitlab.lblw.ca/diase/jfeco/web-app.git
+git clone https://gitlab.lblw.ca/diase/jfeco/category-service.git
+ls
+clear
+ls
+cd 
+ls
+cd .secret
+ls
+z web
+ls
+ls -a 
+v .lcl
+ls -a 
+ll
+vim .lcl
+ls
+cd
+ls
+ll
+rm -rf github.pub
+ls
+v
+ls
+cd
+ls
+clear
+ll
+ls
+clear
+ls
+cd .config
+ls
+ls -a 
+ll 
+printenv
+bat nvim
+ls
+cd nvim
+ls
+nvim init.lua
+ls -ld /Users/clau1
+ls -ld /Users/clau1/.config/nvi
+ls -ld /Users/clau1/.config/nvim
+ls
+brew install wezterm
+brew install --cask wezterm
+ls
+zed 
+zed . 
+cd .. 
+ks
+ls
+cd .zsh
+ls
+cd zsh
+v
+ls
+code . 
+zed . 
+ls
+clear
+ls
+ls
+cd
+ls
+ls 
+ls -a 
+ll 
+ll
+ll
+ll
+ll
+ls
+ls -a 
+bat .wezterm.lua
+\:q
+ls
+clear
+ls
+cd Developer
+ls
+ls
+lll
+clear
+ll
+ls -a 
+ls 
+cd .secret
+ls
+ls -a 
+v .lcl
+ls
+vim .lcl
+cd 
+ls
+cd Developer
+ls
+lls
+git clone https://gitlab.lblw.ca/diase/jfeco/user-service.git
+git clone https://gitlab.lblw.ca/diase/jfeco/lt-dia-analytics-se-jfeco.git
+ls
+clear
+lll
+ll
+cd category-service
+npm i 
+npm -f 
+npm i -f 
+npm i 
+npm i -f 
+ls
+ks
+cd
+ls
+vim .npmrc 
+cd 
+ls
+ls -a 
+ls
+cd .. 
+lks
+cd web-app
+npm i -f 
+ks
+ls
+clear
+ls
+cd 
+ls
+bat .secrets
+ls
+cd .secret
+ls
+ls -a
+bat .lcl
+zed . 
+ls
+cd .. 
+ls
+cd Developer
+ls
+cd web-app
+zed . 
+ls
+ls
+ls -a 
+cd
+ls
+z developer
+ls
+git clone https://gitlab.lblw.ca/diase/jfeco/infrastructure.git
+cd
+ls
+ls
+touch .npmrc
+ls
+v .npmrc
+vim .npmrc
+ls
+chmod +x .npmrc
+ls
+ls -a 
+cd .config
+ls
+ll
+ll
+ls
+ls
+clear
+ls
+l
+ll
+clear
+ll
+cd Developer
+ls
+cd web-app
+ls
+npm i -F 
+npm i -f 
+ls
+cd .. ls
+ls
+cd .. 
+ls
+git clone https://gitlab.lblw.ca/diase/common/types.git
+cd types
+npm i 
+ls
+cd .. 
+ls
+cd category-service
+npm i -f
+cd .. 
+ls
+cd .
+ls
+cd 
+ls
+vim .npmrc
+source .npmrc
+ls 
+cd .. 
+ls
+cd category-service
+npm i -f 
+ls
+l
+cd
+ls
+vim .npmrc
+z web-app
+npm i -f 
+exit
+ls
+cd
+ls
+cd .config
+ls
+cd
+ls
+cd .dotfile
+ls
+z .dotfiles
+ls
+cd .config
+ls
+cd mise
+ls
+v
+vim config.toml
+mise use -g node@16.20.2
+brew install mise
+ls
+cd Developer
+ls
+cd web-app
+npm i -f 
+exit
+mise use -g node@16.20.2
+mise use -g node@16.20.2 --verbose
+brew install mise
+curl https://mise.run | sh
+chmod u+w /Users/clau1/.local\
+
+curl https://mise.run | sh
+sudo chown -R clau1:clau1 /Users/clau1/.local\
+
+sudo mkdir -p /Users/clau1/.local/bin\
+
+curl https://mise.run | sh
+ls -l /Users/clau1/.local/bin\
+
+ls
+cd
+ls
+cd .lcl
+cd .local
+ls
+cd bin
+cd .. 
+ls
+chmod +x ./bin/*
+chmod +x ./bin
+cd ./bin
+ls
+ls -a
+ls
+ls -a 
+cd .. 
+ls
+ls bin -ld
+cd .. 
+ls
+curl https://mise.run | sh
+ls -ld /Users/clau1/.local/bin\
+
+#
+#
+chmod u+w /Users/clau1/.local/bin\
+
+ls
+ls -l mise/bin/mise\
+
+curl https://mise.run | sh
+chmod u+rw mise/bin/mise\
+
+sudo mv mise/bin/mise /Users/clau1/.local/bin/mise\
+
+ls
+cd .local
+ls
+cd bin
+ls
+ls -a 
+mkdir mise
+ls
+chmod +x 
+chmod + x .
+ls -a 
+zed . 
+xattr -d com.apple.quarantine mise/bin/mise\
+
+lsattr mise/bin/mise   # Linux\
+
+ls -a 
+xattr -l mise/bin/mise
+cd ..
+ls
+cd ..
+ls
+clear
+ls
+ls
+cd .dot
+ls
+v
+clear
+q
+cd category-service
+npm i -f 
+cd
+ls
+vim .npmrc
+ls
+clear
+ls
+cd .secret
+ls
+v
+ls
+ls -a 
+v .lcl
+vim .lcl
+ls
+cd .. 
+ls
+cd Developer
+ls
+cd web-app
+npm i -f
+ exit
+cd web-app
+npm i -f 
+chmod u+rw ~/.local/bin\
+
+cd
+ls

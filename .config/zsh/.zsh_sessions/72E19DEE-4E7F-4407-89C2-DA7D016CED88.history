@@ -1,0 +1,116 @@
+ls
+.dot
+cd dot
+v
+lg
+lazygit
+v
+ls
+cd .config
+ls
+v lazygit
+brew install commitizen\
+
+cd .. 
+ls
+brew dump -f
+brew bundle dump -f 
+v Brewfile
+ls
+lazygit
+git cz
+v
+cd .config
+v lazygit
+v
+v lazygit
+v
+v lazygit
+lazygit
+ls
+ll
+ls -a 
+ll
+ls 
+ls 
+ls -a 
+cd .config
+ls
+ls
+ls
+cd Developer
+ls
+ls
+rm -rf github github.pub install.sh
+ls
+ls
+cd
+ls
+ll
+clear
+ls
+clear
+ls
+ls
+cd ..
+ls
+printenv
+z .dot
+ls
+cd
+ls
+z .dot
+cd .config
+v
+q
+ls
+mkdir .secret
+ls
+cd .secret
+ls
+zed 
+ls
+ls
+clear
+l
+sll
+clear
+ll
+ls -a 
+touch .lcl 
+vim .lcl 
+ls 
+cd .. 
+ls 
+source .zshenv
+ls
+cd .
+ls
+cd .. 
+cd 
+chmod + x .config
+ls
+ls -a 
+cd .config
+ls
+chmod + x *
+cd ..
+ls
+cd github
+ls
+rm -rf github
+ls
+ks
+exit
+ls
+clear
+ll
+ls 
+ll 
+ll 
+source .zshen
+source .zshenv
+exit
+ls
+sudo spctl --master-disable\
+
