@@ -1,8 +1,8 @@
 [tools]
-node = "lts"
 python = "latest"
 lua = "latest"
 pnpm = "latest"
+node = "16.20.2"
 
 [settings]
 # configure `mise install` to always keep the downloaded archive
