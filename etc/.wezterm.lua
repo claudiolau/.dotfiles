@@ -13,14 +13,15 @@ config.colors = {
 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 
--- ui screen
+-- INFO:  ui screen
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 19
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.75
 config.macos_window_background_blur = 10
--- actions
+
+-- INFO: actions
 config.skip_close_confirmation_for_processes_named = {
 	"bash",
 	"sh",
@@ -33,6 +34,8 @@ config.skip_close_confirmation_for_processes_named = {
 	"powershell.exe",
 	"nvim",
 }
+
+--INFO key-map
 config.keys = {
 	{
 		key = "w",
