@@ -10,6 +10,7 @@ keybinds {
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt t" { NewTab; }  // Example: Alt + t to create a new tab
     }
     pane {
         bind "h" "Left" { MoveFocus "Left"; }

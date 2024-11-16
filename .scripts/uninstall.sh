@@ -1,16 +1,15 @@
 #!/bin/bash
 
 ###############################################################################
-# Configuration                                                               # 
+# Remove symlink                                                              #
+###############################################################################
+  
+stow -D -t $HOME/.config .config
+stow -D $HOME etc
+rm -rf ./config
+
+###############################################################################
+# Remove Package Manager                                                      # 
 ###############################################################################
 
-mkdir -p ~/.config
-eval "$(/opt/homebrew/bin/brew shellenv)"
-stow -t $HOME/.config .config
-stow -t $HOME etc
-
-###############################################################################
-# Secrets                                                                     # 
-###############################################################################
-
-mkdir -p ~/.secrets
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"

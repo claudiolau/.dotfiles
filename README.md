@@ -1,29 +1,13 @@
 # .dotfiles
 
-Backup, restore, and sync the prefs and settings.
+<div align="center">
+    <img alt="Last commit" src="https://img.shields.io/github/last-commit/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
+</div>
 
-## Install
+# ⚡️ Getting Started
 
-Check Ownership and Permissions: 
-```
-ls -ld ~/.local/bin
-ls -ld ~/.local/state
-```
-Correct Ownership:
-```
-sudo chown -R <owner>:<owner> ~/.local/bin
-sudo chown -R <owner>:<owner> ~/.local/state
-```
-Set Correct Permissions: 
-```
-chmod -R u+rw ~/.local/bin
-chmod -R u+rw ~/.local/state
-```
-Neovim and Mason, Mise need read/write access to these directories to install and use tools properly.
+Execute scripts for installation and setup to symlink configs. Restart and access maybe necessary
 
-# Issues  
+# 📂 File Structure
 
-```
-bat cache --build
-```
-To resolve theme and syntax settings.
+Various specifications specify files and file formats using XDG Base Directory specifications.

@@ -12,7 +12,7 @@ brew bundle install
 # Bin									                                                        # 
 ###############################################################################
 
-for script in ./bin/*.sh; do
+for script in $HOME/.dotfiles/bin/*.sh; do
     if [ -f "$script" ]; then
         echo "Executing $script"
         sudo "$script"
