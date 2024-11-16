@@ -1,8 +1,8 @@
 # .dotfiles
 
-<div align="center">
-    <img alt="Last commit" src="https://img.shields.io/github/last-commit/LazyVim/LazyVim?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
-</div>
+![Last Commit](https://img.shields.io/github/last-commit/claudiolau/dotfiles)
+
+Warning: Configuring literally everything with dotfiles automatically may cause unexpected levels of customization, an infinite loop of tweaking, and an unhealthy attachment to your terminal.
 
 # ⚡️ Getting Started
 
