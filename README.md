@@ -1,6 +1,6 @@
 # .dotfiles
 
-![Last Commit](https://img.shields.io/github/last-commit/claudiolau/dotfiles)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/https%3A%2F%2Fgithub.com%2Fclaudiolau%2F.dotfiles/:repo/:branch)
 
 Warning: Configuring literally everything with dotfiles automatically may cause unexpected levels of customization, an infinite loop of tweaking, and an unhealthy attachment to your terminal.
 
