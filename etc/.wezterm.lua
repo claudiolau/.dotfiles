@@ -32,6 +32,7 @@ config.skip_close_confirmation_for_processes_named = {
 	"cmd.exe",
 	"pwsh.exe",
 	"powershell.exe",
+	"wezterm",
 	"nvim",
 }
 

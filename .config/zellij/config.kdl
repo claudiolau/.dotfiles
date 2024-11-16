@@ -2,7 +2,6 @@ default_layout "default"
 
 
 keybinds {
-    // keybinds are divided into modes
     normal {
         // bind instructions can include one or more keys (both keys will be bound separately)
         // bind keys can include one or more actions (all actions will be performed with no sequential guarantees)
@@ -10,7 +9,8 @@ keybinds {
         bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt t" { NewTab; }  // Example: Alt + t to create a new tab
+        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt t" { NewTab; } 
     }
     pane {
         bind "h" "Left" { MoveFocus "Left"; }
