@@ -1,13 +1,12 @@
 # .dotfiles
 
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/claudiolau/.dotfiles/main)
+![GitHub contributors](https://img.shields.io/github/contributors/claudiolau/.dotfiles?style=for-the-badge)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/claudiolau/.dotfiles/main?style=for-the-badge)
 
-Warning: Configuring literally everything with dotfiles automatically may cause unexpected levels of customization, an infinite loop of tweaking, and an unhealthy attachment to your terminal.
-
-# ⚡️ Getting Started
+## ⚡️ Getting Started
 
 Execute scripts for installation and setup to symlink configs. Restart and access maybe necessary
 
-# 📂 File Structure
+## 📂 File Structure
 
 Various specifications specify files and file formats using XDG Base Directory specifications.
