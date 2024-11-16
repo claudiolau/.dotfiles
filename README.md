@@ -2,10 +2,10 @@
 
 <div align="center">
 <a href='https://github.com/claudiolau/.dotfiles/graphs/commit-activity'>
-![GitHub contributors](https://img.shields.io/github/contributors/claudiolau/.dotfiles?style=for-the-badge&logo=starship)
+    <img alt='commit activity' src='https://img.shields.io/github/contributors/claudiolau/.dotfiles?style=for-the-badge&logo=starship'/>
 </a>
 <a href='https://github.com/claudiolau/.dotfiles/pulse'>
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/claudiolau/.dotfiles/main?style=for-the-badge&logo=starship)
+    <img alt='pulse'src ='https://img.shields.io/github/commit-activity/w/claudiolau/.dotfiles/main?style=for-the-badge&logo=starship'/>
 </a>
 </div>
 
