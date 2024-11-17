@@ -85,6 +85,22 @@ return {
           capabilities = capabilities,
         })
       end,
+      ['pyright'] = function()
+        lspconfig['pyright'].setup {
+          capabilities = capabilities,
+          filetypes = { 'python' },
+          settings = {
+            python = {
+              analysis = {
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = 'workspace',
+                smartCompletion = true,
+              },
+            },
+          },
+        }
+      end,
       ['svelte'] = function()
         -- configure svelte server
         lspconfig['svelte'].setup({
