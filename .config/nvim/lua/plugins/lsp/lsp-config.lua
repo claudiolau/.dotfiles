@@ -85,8 +85,8 @@ return {
           capabilities = capabilities,
         })
       end,
-      ['pyright'] = function()
-        lspconfig['pyright'].setup {
+      ['basedpyright'] = function()
+        lspconfig['basedpyright'].setup {
           capabilities = capabilities,
           filetypes = { 'python' },
           settings = {
