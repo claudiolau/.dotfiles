@@ -99,6 +99,18 @@ return {
               },
             },
           },
+          on_init = function(client)
+            -- Activate virtual environment on init
+            local venv_path = vim.fn.getcwd() .. '/.venv/bin/python3'
+
+            -- Check if the virtual environment exists and update pythonPath
+            if vim.fn.filereadable(venv_path) == 1 then
+              client.config.settings.python.pythonPath = venv_path
+              print('Activated virtual environment at ' .. venv_path)
+            else
+              print('Virtual environment not found at ' .. venv_path)
+            end
+          end,
         }
       end,
       ['svelte'] = function()
