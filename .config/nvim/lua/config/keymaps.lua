@@ -13,16 +13,17 @@ vim.api.nvim_set_keymap('t', '<leader><esc>', '<C-\\><C-n>:qa!<CR>', { noremap =
 vim.api.nvim_set_keymap('n', '<leader>vs', ':vsp<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>hs', ':sp<CR>', { noremap = true })
 --
--- -- Pane navigation
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
+-- Normal mode key mappings for window navigation
+vim.api.nvim_set_keymap('n', '<Tab>j', '<C-w>j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Tab>k', '<C-w>k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Tab>l', '<C-w>l', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Tab>h', '<C-w>h', { noremap = true, silent = true })
 
--- Key mappings for navigating between terminal panes in terminal mode
-vim.api.nvim_set_keymap('t', '<C-j>', '<C-\\><C-N><C-w>j', { noremap = true })
-vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-N><C-w>k', { noremap = true })
-vim.api.nvim_set_keymap('t', '<C-l>', '<C-\\><C-N><C-w>l', { noremap = true })
+-- Terminal mode key mappings for window navigation
+vim.api.nvim_set_keymap('t', '<Tab>j', '<C-\\><C-n><C-w>j', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Tab>k', '<C-\\><C-n><C-w>k', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Tab>l', '<C-\\><C-n><C-w>l', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Tab>h', '<C-\\><C-n><C-w>h', { noremap = true, silent = true })
 
 -- Tab navigation between buffers
 vim.api.nvim_set_keymap('n', '<leader><Tab>', ':bnext<CR>', { noremap = true, silent = true })
