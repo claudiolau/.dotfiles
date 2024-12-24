@@ -49,8 +49,12 @@ alias lta="lt -a"
 alias cls="clear"
 alias q="exit"
 alias zell="zellij"
+export EDITOR=nvim
 
 # ==============================================================================
 # Secret Related Dependencies
 # ==============================================================================
 [ -f "$HOME/.secrets/.env" ] && source "$HOME/.secrets/.env" 
+
+
+
