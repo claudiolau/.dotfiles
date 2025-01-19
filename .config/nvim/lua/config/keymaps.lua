@@ -2,17 +2,11 @@
 
 vim.g.mapleader = ' '
 
-vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true })
-
 -- Escape
 vim.api.nvim_set_keymap('n', '<leader><esc>', ':qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader><esc>', ':<C-u>qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('t', '<leader><esc>', '<C-\\><C-n>:qa!<CR>', { noremap = true })
 
--- Split panes
-vim.api.nvim_set_keymap('n', '<leader>vs', ':vsp<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>hs', ':sp<CR>', { noremap = true })
---
 -- Normal mode key mappings for window navigation
 vim.api.nvim_set_keymap('n', '<Tab>j', '<C-w>j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Tab>k', '<C-w>k', { noremap = true, silent = true })

@@ -1,7 +1,7 @@
 return {
   'crnvl96/lazydocker.nvim',
-  event = 'VeryLazy',
   opts = {}, -- automatically calls `require("lazydocker").setup()`
+ lazy = true,
   dependencies = {
     'MunifTanjim/nui.nvim',
   },
