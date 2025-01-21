@@ -32,6 +32,7 @@ require('lazy').setup({
     { import = 'plugins.telescope' },
     { import = 'plugins.theme' },
     { import = 'plugins.mode' },
+    { import = 'plugins.lsp'}
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
