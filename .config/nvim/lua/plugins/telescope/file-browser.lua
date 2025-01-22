@@ -5,11 +5,6 @@ return {
     require('telescope').load_extension('file_browser')
 
     -- Key mapping for opening the file browser
-    vim.api.nvim_set_keymap(
-      'n',
-      '<leader>fb',
-      ':cd %:p:h<CR><cmd>Telescope file_browser<cr>',
-      { noremap = true, silent = true }
-    )
+    vim.keymap.set('n', '<space>fb', ':Telescope file_browser path=%:p:h select_buffer=true<CR>')
   end,
 }
