@@ -9,9 +9,9 @@ vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader><esc>', ':qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader><esc>', ':<C-u>qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('t', '<leader><esc>', '<C-\\><C-n>:qa!<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true })
-vim.api.nvim_set_keymap('v', '<leader>q', ':<C-u>:q<CR>', { noremap = true })
-vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>:q<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>q', ':q!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('v', '<leader>q', ':<C-u>:q!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>:q!<CR>', { noremap = true })
 
 -- Normal mode
 
