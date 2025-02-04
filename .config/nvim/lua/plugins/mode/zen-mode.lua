@@ -7,6 +7,6 @@ return {
     -- refer to the configuration section below
   },
   keys = {
-    { '<leader>zz', '<cmd>ZenMode<cr>', desc = 'zen a split' },
+    { '<leader>zm', '<cmd>ZenMode<cr>', desc = 'zen a split' },
   },
 }
