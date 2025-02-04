@@ -2,9 +2,6 @@
 
 vim.g.mapleader = ' '
 
--- save
-vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true })
-
 -- quit
 vim.api.nvim_set_keymap('n', '<leader><esc>', ':qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader><esc>', ':<C-u>qa!<CR>', { noremap = true })
