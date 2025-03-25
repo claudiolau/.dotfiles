@@ -6,7 +6,6 @@ layout {
                 format_left   "{mode} #[fg=#89B4FA,bold]{session}"
                 format_right "{tabs}"
                 format_space  ""
-
                 border_enabled  "false"
                 border_char     "─"
                 border_format   "{char}"
@@ -28,5 +27,8 @@ layout {
             }
         }
     }
-}
+    tab  cwd="$HOME/Developer/"
+        pane
+    }
 
+}
