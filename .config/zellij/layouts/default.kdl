@@ -27,8 +27,4 @@ layout {
             }
         }
     }
-    tab  cwd="$HOME/Developer/"
-        pane
-    }
-
 }
