@@ -31,7 +31,6 @@ require('lazy').setup({
     { import = 'plugins' },
     { import = 'plugins.telescope' },
     { import = 'plugins.theme' },
-    { import = 'plugins.mode' },
     { import = 'plugins.lsp' },
   },
   -- Configure any other settings here. See the documentation for more details.
