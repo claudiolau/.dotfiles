@@ -6,7 +6,7 @@ return {
   opts = {
     -- refer to the configuration section below
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = { sections = { section = 'keys', gap = 1, padding = 1 } },
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
