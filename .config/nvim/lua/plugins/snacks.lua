@@ -17,7 +17,16 @@ return {
     },
     styles = {
       notification = {
-        -- wo = { wrap = true } -- Wrap notifications
+        border = 'rounded',
+        zindex = 100,
+        ft = 'markdown',
+        wo = {
+          winblend = 5,
+          wrap = false,
+          conceallevel = 2,
+          colorcolumn = '',
+        },
+        bo = { filetype = 'snacks_notif' },
       },
     },
     quickfile = { enabled = true },

@@ -11,6 +11,7 @@ keybinds {
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
         bind "Alt t" { NewTab; } 
+        bind "Alt f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
     }
     pane {
         bind "h" "Left" { MoveFocus "Left"; }
