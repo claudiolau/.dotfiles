@@ -1,7 +1,0 @@
-.todo
-
-.DS_Store
-*.swp
-./test.sh
-
-./.config/zsh/.zsh_history
