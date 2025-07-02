@@ -1,5 +1,4 @@
-default_layout "default"
-
+default_layout "work"
 
 keybinds {
     normal {
