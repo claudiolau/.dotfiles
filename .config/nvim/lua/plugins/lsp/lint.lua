@@ -3,7 +3,6 @@ return {
   event = { 'BufReadPre', 'BufNewFile' },
   config = function()
     local lint = require('lint')
-
     lint.linters_by_ft = {
       javascript = { 'eslint_d' },
       typescript = { 'eslint_d' },
@@ -12,7 +11,6 @@ return {
       svelte = { 'eslint_d' },
       python = { 'pylint' },
     }
-
     local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
 
     vim.api.nvim_create_autocmd({ 'BufWritePost', 'BufReadPost', 'InsertLeave' }, {
@@ -22,6 +20,9 @@ return {
       end,
     })
 
+    vim.keymap.set('n', '<leader>ld', function()
+      vim.diagnostic.open_float()
+    end, { desc = 'Open diagnostic float' })
     vim.keymap.set('n', '<leader>l', function()
       lint.try_lint()
     end, { desc = 'Trigger linting for current file' })
