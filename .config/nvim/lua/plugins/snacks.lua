@@ -61,5 +61,12 @@ return {
       end,
       desc = 'Toggle Zoom',
     },
+    {
+      '<leader>lg',
+      function()
+        Snacks.lazygit()
+      end,
+      desc = 'lazygit',
+    },
   },
 }
