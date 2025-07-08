@@ -1,4 +1,4 @@
---- ShortCut Settings ---
+--- ShortCut Settings
 vim.g.mapleader = ' '
 
 -- Save
