@@ -39,15 +39,20 @@ function y() {
 # Custom Aliasing
 # ==============================================================================
 
-# Editor
+# cli
 alias v="nvim"
 alias ls="eza --icons=always"
 alias ll="ls -l"
 alias la="ls -a"
 alias lt="eza --tree --level=2 --long --icons --git"
 alias lta="lt -a"
+alias lg='lazygit'
+
+# clear 
 alias cls="clear"
 alias q="exit"
+
+# editor options
 alias zell="zellij"
 export EDITOR=nvim
 
@@ -55,6 +60,3 @@ export EDITOR=nvim
 # Secret Related Dependencies
 # ==============================================================================
 [ -f "$HOME/.secrets/.env" ] && source "$HOME/.secrets/.env" 
-
-
-

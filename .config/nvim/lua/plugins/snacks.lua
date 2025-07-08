@@ -6,7 +6,19 @@ return {
   opts = {
     -- refer to the configuration section below
     bigfile = { enabled = true },
-    dashboard = { sections = { section = 'keys', gap = 1, padding = 1 } },
+    dashboard = {
+      sections = {
+        { section = 'keys', gap = 1, padding = 1 },
+        {
+          pane = 1,
+          icon = ' ',
+          desc = 'Change Branch',
+          padding = 1,
+          key = 'b',
+          action = ':Telescope git_branches',
+        },
+      },
+    },
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
@@ -61,6 +73,7 @@ return {
       end,
       desc = 'Toggle Zoom',
     },
+    -- INFO: git
     {
       '<leader>lg',
       function()
