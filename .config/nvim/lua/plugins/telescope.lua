@@ -41,6 +41,7 @@ return {
     -- git
     keymap.set('n', '<leader>fgc', '<cmd>Telescope git_commits<cr>', { desc = 'Find git commit' })
     keymap.set('n', '<leader>fgb', '<cmd>Telescope git_branches<cr>', { desc = 'Find git branches' })
-    keymap.set('n', '<leader>fgs', '<cmd>Telescope git_stash<cr>', { desc = 'Find git branches' })
+    keymap.set('n', '<leader>fgcb', '<cmd>Telescop git_bcommits<cr>', { desc = 'Find git branch commit' })
+    keymap.set('n', '<leader>fgs', '<cmd>Telescope git_stash<cr>', { desc = 'Find git stash' })
   end,
 }

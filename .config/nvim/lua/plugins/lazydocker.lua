@@ -9,7 +9,7 @@ return {
     require('lazydocker').setup()
     vim.keymap.set(
       'n',
-      '<leader>k',
+      '<leader>lk',
       '<cmd>LazyDocker<CR>',
       { desc = 'Toggle LazyDocker', noremap = true, silent = true }
     )

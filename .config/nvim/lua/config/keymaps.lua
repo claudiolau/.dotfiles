@@ -1,7 +1,11 @@
 --- ShortCut Settings ---
 vim.g.mapleader = ' '
 
--- quit
+-- Save
+vim.api.nvim_set_keymap('n', '<leader>w', ':w<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>wq', ':wq<cr>', { noremap = true })
+
+-- Quit
 vim.api.nvim_set_keymap('n', '<leader><esc>', ':qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader><esc>', ':<C-u>qa!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('t', '<leader><esc>', '<C-\\><C-n>:qa!<CR>', { noremap = true })
@@ -9,7 +13,7 @@ vim.api.nvim_set_keymap('n', '<leader>q', ':q!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('v', '<leader>q', ':<C-u>:q!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('t', '<leader>q', '<C-\\><C-n>:q!<CR>', { noremap = true })
 
--- Easier window navigation
+-- Navigation
 vim.api.nvim_set_keymap('n', '<S-Tab>', '<C-w>W', { noremap = true, silent = true }) -- Previous window
 vim.api.nvim_set_keymap('n', '<Tab>', '<C-w>w', { noremap = true, silent = true }) -- Next window
 

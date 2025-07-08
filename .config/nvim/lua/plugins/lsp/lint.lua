@@ -20,7 +20,7 @@ return {
       end,
     })
 
-    vim.keymap.set('n', '<leader>ld', function()
+    vim.keymap.set('n', '<leader>lk', function()
       vim.diagnostic.open_float()
     end, { desc = 'Open diagnostic float' })
     vim.keymap.set('n', '<leader>l', function()
