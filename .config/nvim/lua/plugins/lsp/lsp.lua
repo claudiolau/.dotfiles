@@ -2,21 +2,27 @@ return {
   'neovim/nvim-lspconfig',
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
+    { 'mason-org/mason.nvim', build = ':MasonUpdate', config = true },
+    {
+      'mason-org/mason-lspconfig.nvim',
+      dependencies = { 'mason-org/mason.nvim' },
+      config = function()
+        require('mason').setup()
+        require('mason-lspconfig').setup({
+          ensure_installed = {
+            'lua_ls',
+            'ts_ls',
+            'emmet_ls',
+          },
+          automatic_installation = true,
+        })
+      end,
+    },
     'saghen/blink.cmp',
     { 'antosha417/nvim-lsp-file-operations', config = true },
   },
   config = function()
-    -- import lspconfig plugin
-    local lspconfig = require('lspconfig')
-
-    -- import mason_lspconfig plugin
-    local mason_lspconfig = require('mason-lspconfig')
-
-    -- import blink plugin
-    local capabilities = require('blink.cmp').get_lsp_capabilities()
-
-    local keymap = vim.keymap -- for conciseness
-
+    local keymap = vim.keymap
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('UserLspConfig', {}),
       callback = function(ev)
@@ -40,12 +46,6 @@ return {
         opts.desc = 'Show LSP type definitions'
         keymap.set('n', 'gt', '<cmd>Telescope lsp_type_definitions<CR>', opts) -- show lsp type definitions
 
-        opts.desc = 'See available code actions'
-        keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
-
-        opts.desc = 'Smart rename'
-        keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts) -- smart rename
-
         opts.desc = 'Show buffer diagnostics'
         keymap.set('n', '<leader>D', '<cmd>Telescope diagnostics bufnr=0<CR>', opts) -- show  diagnostics for file
 
@@ -66,69 +66,19 @@ return {
       end,
     })
 
-    -- used to enable autocompletion (assign to every lsp server config)
-
     -- Change the Diagnostic symbols in the sign column (gutter)
-    -- (not in youtube nvim video)
     local signs = { Error = ' ', Warn = ' ', Hint = '󰠠 ', Info = ' ' }
+    local diagnostic_signs = {}
+
     for type, icon in pairs(signs) do
-      local hl = 'DiagnosticSign' .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+      local severity = vim.diagnostic.severity[string.upper(type)]
+      diagnostic_signs[severity] = icon
     end
 
-    mason_lspconfig.setup_handlers({
-      -- default handler for installed servers
-      function(server_name)
-        lspconfig[server_name].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ['svelte'] = function()
-        -- configure svelte server
-        lspconfig['svelte'].setup({
-          capabilities = capabilities,
-          on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd('BufWritePost', {
-              pattern = { '*.js', '*.ts' },
-              callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
-                client.notify('$/onDidChangeTsOrJsFile', { uri = ctx.match })
-              end,
-            })
-          end,
-        })
-      end,
-      ['graphql'] = function()
-        -- configure graphql language server
-        lspconfig['graphql'].setup({
-          capabilities = capabilities,
-          filetypes = { 'graphql', 'gql', 'svelte', 'typescriptreact', 'javascriptreact' },
-        })
-      end,
-      ['emmet_ls'] = function()
-        -- configure emmet language server
-        lspconfig['emmet_ls'].setup({
-          capabilities = capabilities,
-          filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte' },
-        })
-      end,
-      ['lua_ls'] = function()
-        -- configure lua server (with special settings)
-        lspconfig['lua_ls'].setup({
-          capabilities = capabilities,
-          settings = {
-            Lua = {
-              -- make the language server recognize "vim" global
-              diagnostics = {
-                globals = { 'vim' },
-              },
-              completion = {
-                callSnippet = 'Replace',
-              },
-            },
-          },
-        })
-      end,
+    vim.diagnostic.config({
+      signs = {
+        text = diagnostic_signs,
+      },
     })
   end,
 }

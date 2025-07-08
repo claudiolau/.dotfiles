@@ -6,7 +6,19 @@ return {
   opts = {
     -- refer to the configuration section below
     bigfile = { enabled = true },
-    dashboard = { sections = { section = 'keys', gap = 1, padding = 1 } },
+    dashboard = {
+      sections = {
+        {
+          pane = 1,
+          icon = ' ',
+          desc = 'Change Branch',
+          padding = 1,
+          key = 'b',
+          action = ':Telescope git_branches',
+        },
+        { section = 'keys', gap = 1, padding = 1 },
+      },
+    },
     explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
@@ -61,12 +73,13 @@ return {
       end,
       desc = 'Toggle Zoom',
     },
+    -- INFO: git
     {
       '<leader>lg',
       function()
         Snacks.lazygit()
       end,
-      desc = 'lazygit',
+      desc = 'Lazygit',
     },
   },
 }
