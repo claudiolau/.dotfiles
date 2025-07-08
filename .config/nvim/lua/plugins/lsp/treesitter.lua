@@ -2,9 +2,6 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   event = { 'BufReadPre', 'BufNewFile' },
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter-textobjects',
-  },
   config = function()
     local treesitter = require('nvim-treesitter.configs')
 
@@ -27,14 +24,13 @@ return {
         'prisma',
         'markdown',
         'markdown_inline',
-        'svelte',
-        'graphql',
         'bash',
         'lua',
         'vim',
         'dockerfile',
         'gitignore',
         'query',
+        'regex',
       },
       incremental_selection = {
         enable = true,

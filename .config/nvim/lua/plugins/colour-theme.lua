@@ -9,7 +9,6 @@ return {
       },
     })
 
-    -- Set your colorscheme
     vim.cmd [[colorscheme solarized-osaka]]
 
     -- Function to set transparency for nvim-tree

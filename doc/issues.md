@@ -24,11 +24,3 @@ chmod -R u+rw ~/.local/state
 ```
 
 Neovim and Mason, Mise need read/write access to these directories to install and use tools properly.
-
-# Cache
-
-```
-bat cache --build
-```
-
-To resolve theme and syntax settings.

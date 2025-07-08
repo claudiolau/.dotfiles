@@ -1,9 +1,7 @@
 return {
   'folke/noice.nvim',
   event = 'VeryLazy',
-  opts = {
-    -- add any options here
-  },
+  opts = {},
   dependencies = {
     'echasnovski/mini.notify',
     version = '*',

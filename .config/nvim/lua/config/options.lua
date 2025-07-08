@@ -53,3 +53,13 @@ opt.swapfile = false
 opt.title = true
 opt.titlelen = 0
 opt.titlestring = 'GAIA 🌎'
+opt.shortmess:append('I') -- no intro message
+opt.swapfile = false
+opt.showmode = false
+
+-- statusline
+opt.laststatus = 0
+vim.g.netrw_banner = 0
+
+-- lsp
+vim.diagnostic.config({ virtual_text = true })
