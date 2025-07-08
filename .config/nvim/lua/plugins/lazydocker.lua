@@ -1,17 +1,21 @@
+-- lazydocker.nvim
 return {
-  'crnvl96/lazydocker.nvim',
-  event = 'VeryLazy',
-  opts = {}, -- automatically calls `require("lazydocker").setup()`
-  dependencies = {
-    'MunifTanjim/nui.nvim',
-  },
+  'mgierada/lazydocker.nvim',
+  enabled = false,
+  dependencies = { 'akinsho/toggleterm.nvim' },
   config = function()
-    require('lazydocker').setup()
-    vim.keymap.set(
-      'n',
-      '<leader>lk',
-      '<cmd>LazyDocker<CR>',
-      { desc = 'Toggle LazyDocker', noremap = true, silent = true }
-    )
+    require('lazydocker').setup({
+      border = 'curved', -- valid options are "single" | "double" | "shadow" | "curved"
+    })
   end,
+  event = 'VeryLazy',
+  keys = {
+    {
+      '<leader>ld',
+      function()
+        require('lazydocker').open()
+      end,
+      desc = 'Open Lazydocker floating window',
+    },
+  },
 }
