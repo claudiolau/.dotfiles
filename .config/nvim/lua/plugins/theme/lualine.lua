@@ -1,12 +1,12 @@
 return {
   'nvim-lualine/lualine.nvim',
-  dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  dependencies = { { 'echasnovski/mini.icons', opts = {} } },
   config = function()
     local lualine = require('lualine')
     local lazy_status = require('lazy.status') -- to configure lazy pending updates count
 
     local colors = {
-      blue = '#65D1FF',
+      blue = '#a3aed2',
       green = '#3EFFDC',
       violet = '#FF61EF',
       yellow = '#FFDA7B',
