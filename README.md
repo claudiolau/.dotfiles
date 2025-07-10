@@ -9,10 +9,23 @@
 </a>
 </div>
 
-## ⚡️ Getting Started
+## Installation
 
-Execute scripts for installation and setup to symlink configs. Restart and access maybe necessary
+Setup using commands
+
+```bash
+make install
+make setup
+```
 
 ## 📂 File Structure
 
 Various specifications specify files and file formats using XDG Base Directory specifications.
+
+```bash
+├── .config/
+├── .scripts/
+├── bin/
+├── doc/
+└── etc/
+```

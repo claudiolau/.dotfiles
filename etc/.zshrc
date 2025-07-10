@@ -1,3 +1,4 @@
+# ==============================================================================
 # Set Up
 # ==============================================================================
 # Homebrew-installed binaries without specifying their full path.
@@ -16,7 +17,6 @@ alias cd="z"
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
-export FZF_DEFAULT_OPTS="--preview 'bat --style=numbers --color=always {} || cat {}' --preview-window=right:60%:wrap"
 
 # Set up development environment
 eval "$(mise activate zsh)"
@@ -25,31 +25,27 @@ eval "$(mise activate zsh)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# yazi 
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
-
 # ==============================================================================
 # Aliasing
 # ==============================================================================
 
+# editor
+export EDITOR=nvim
 alias v="nvim"
+alias zell="zellij"
+
+# git
+alias lg='lazygit'
+
+# list files
 alias ls="eza --icons=always"
+alias lt="eza --tree --level=2 --long --icons --git -a"
 alias ll="ls -l"
 alias la="ls -a"
-alias lt="eza --tree --level=2 --long --icons --git"
-alias lta="lt -a"
+
+# clear 
 alias cls="clear"
 alias q="exit"
-alias lg="lazygit"
-alias zell="zellij"
-export EDITOR=nvim
 
 # ==============================================================================
 # Zell Config 

@@ -28,6 +28,5 @@ return {
       delete_debug_prints = 'DeleteDebugPrints',
       reset_debug_prints_counter = 'ResetDebugPrintsCounter',
     },
-    -- … Other options
   },
 }
