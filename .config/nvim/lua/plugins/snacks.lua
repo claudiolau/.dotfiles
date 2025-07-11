@@ -8,7 +8,6 @@ return {
     bigfile = { enabled = true },
     dashboard = {
       sections = {
-        { section = 'keys', gap = 1, padding = 1 },
         {
           pane = 1,
           icon = ' ',
@@ -17,6 +16,7 @@ return {
           key = 'b',
           action = ':Telescope git_branches',
         },
+        { section = 'keys', gap = 1, padding = 1 },
       },
     },
     explorer = { enabled = true },
@@ -79,7 +79,15 @@ return {
       function()
         Snacks.lazygit()
       end,
-      desc = 'lazygit',
+      desc = 'Lazygit',
+    },
+    -- INFO:git browse
+    {
+      '<leader>gr',
+      function()
+        Snacks.gitbrowse.open()
+      end,
+      desc = 'Git repo',
     },
   },
 }

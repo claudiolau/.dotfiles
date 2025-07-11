@@ -74,9 +74,17 @@ return {
 
     -- Change the Diagnostic symbols in the sign column (gutter)
     local signs = { Error = ' ', Warn = ' ', Hint = '󰠠 ', Info = ' ' }
+    local diagnostic_signs = {}
+
     for type, icon in pairs(signs) do
-      local hl = 'DiagnosticSign' .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+      local severity = vim.diagnostic.severity[string.upper(type)]
+      diagnostic_signs[severity] = icon
     end
+
+    vim.diagnostic.config({
+      signs = {
+        text = diagnostic_signs,
+      },
+    })
   end,
 }
