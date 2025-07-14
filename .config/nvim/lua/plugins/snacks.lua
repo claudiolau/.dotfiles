@@ -81,13 +81,5 @@ return {
       end,
       desc = 'Lazygit',
     },
-    -- INFO:git browse
-    {
-      '<leader>gr',
-      function()
-        Snacks.gitbrowse.open()
-      end,
-      desc = 'Git repo',
-    },
   },
 }
