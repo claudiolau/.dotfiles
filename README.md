@@ -11,11 +11,11 @@
 
 ## Installation
 
-Setup using commands
+Setup using commands on \*NIX OS
 
 ```bash
-make install
-make setup
+./bin/scripts/install.sh
+./bin/scripts/set-up.sh
 ```
 
 ## 📂 File Structure
@@ -24,7 +24,6 @@ Various specifications specify files and file formats using XDG Base Directory s
 
 ```bash
 ├── .config/
-├── .scripts/
 ├── bin/
 ├── doc/
 └── etc/
