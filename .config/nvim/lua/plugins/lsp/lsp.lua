@@ -22,7 +22,7 @@ return {
     { 'antosha417/nvim-lsp-file-operations', config = true },
   },
   config = function()
-    local keymap = vim.keymap -- for conciseness
+    local keymap = vim.keymap
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('UserLspConfig', {}),
       callback = function(ev)

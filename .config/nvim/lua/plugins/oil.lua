@@ -5,9 +5,6 @@ return {
   opts = {
     view_options = {
       show_hidden = true,
-      git = {
-        add = false, -- Disable git integration entirely
-      },
     },
   },
   dependencies = { { 'echasnovski/mini.icons', opts = {} } },
