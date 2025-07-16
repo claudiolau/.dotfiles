@@ -10,6 +10,7 @@ export HOMEBREW_AUTO_UPDATE_SECS=43200
 # Set the location of the Starship configuration file
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+eval "$(starship init zsh 2>/dev/null)"
 
 # Smarter cd command 
 eval "$(zoxide init zsh)"
@@ -33,6 +34,16 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 export EDITOR=nvim
 alias v="nvim"
 alias zell="zellij"
+
+# python-env 
+alias pyenv='source .venv/bin/activate'
+alias pyenvd='deactivate'
+
+# node-env 
+alias nd='npm run dev'
+alias nb='npm run build'
+alias nl='npm run lint'
+alias nt='npm run test'
 
 # git
 alias lg='lazygit'
