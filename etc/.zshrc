@@ -34,6 +34,10 @@ export EDITOR=nvim
 alias v="nvim"
 alias zell="zellij"
 
+# python-env 
+alias pyenv='source .venv/bin/activate'
+alias pyenvd='deactivate'
+
 # git
 alias lg='lazygit'
 
