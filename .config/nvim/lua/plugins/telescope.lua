@@ -18,9 +18,13 @@ return {
             ['<C-k>'] = actions.move_selection_previous,
             ['<C-j>'] = actions.move_selection_next,
             ['<C-d>'] = actions.delete_buffer,
+            ['<PageUp>'] = require('telescope.actions').preview_scrolling_up,
+            ['<PageDown>'] = require('telescope.actions').preview_scrolling_down,
           },
           n = {
             ['<C-d>'] = actions.delete_buffer,
+            ['<PageUp>'] = require('telescope.actions').preview_scrolling_up,
+            ['<PageDown>'] = require('telescope.actions').preview_scrolling_down,
           },
         },
       },
