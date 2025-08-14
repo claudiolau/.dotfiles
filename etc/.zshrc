@@ -39,6 +39,12 @@ alias zell="zellij"
 alias pyenv='source .venv/bin/activate'
 alias pyenvd='deactivate'
 
+# node-env 
+alias nd='npm run dev'
+alias nb='npm run build'
+alias nl='npm run lint'
+alias nt='npm run test'
+
 # git
 alias lg='lazygit'
 
