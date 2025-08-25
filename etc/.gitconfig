@@ -19,6 +19,9 @@
 
 [merge]
     conflictstyle = diff3
+    command = "delta"
+    args = []
+	  tool = vimdiff
 
 [diff]
     colorMoved = default
